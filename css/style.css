@@ -690,6 +690,24 @@ h3.w3ls-title.w3title2 {
 
 /*-- //stats --*/
 
+/* Page Service */
+.card_single{
+    box-sizing: border-box;
+    border: solid 1px rgb(30, 30, 30);
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.51);
+-moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.51);
+box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.51);
+}
+.card_single img{
+    width: 350px;
+    height: 300px;
+}
+
+/* //Page service */
+
 /*-- Services --*/
 
 .agile-why-text.two {
@@ -805,6 +823,61 @@ h3.w3ls-title.w3title2 {
 }
 
 /*-- //Services --*/
+
+/* Produtos */
+.gallery_product .p-mask, .row .product .vm-product-media-container .p-mask {
+    opacity: 0;
+     visibility: hidden;
+     background: rgba(25, 24, 24, 0.8);
+     bottom: 0%;
+     position: absolute;
+     padding: 1.3em 1.3em;
+     width: 92%;
+     -webkit-transform: translate3d( 0px, 100%, 0px );
+     -moz-transform: translate3d( 0px, 100%, 0px );
+     -ms-transform: translate3d( 0px, 100%, 0px );
+     -o-transform: translate3d( 0px, 100%, 0px );
+     transform: translate3d( 0px, 100%, 0px );
+     -webkit-transition: all .5s ease 0s;
+     -moz-transition: all .5s ease 0s;
+     transition: all .5s ease 0s;
+     text-align: left;
+     border-bottom: 3px solid rgba(240, 17, 24);
+ }
+ .gallery_product .p-mask .p-desc{
+     color: #a3a3a3;
+     position: relative;
+     display: block;
+     margin-bottom: 10px;
+     padding-bottom: 10px;
+     font-size: 1em;
+ }
+ .gallery_product:hover .p-mask, .row .product:hover .p-mask {
+     opacity: 1;
+     visibility: visible;
+     -webkit-transform: translate3d( 0px, 0px, 0px );
+     -moz-transform: translate3d( 0px, 0px, 0px );
+     -ms-transform: translate3d( 0px, 0px, 0px );
+     -o-transform: translate3d( 0px, 0px, 0px );
+     transform: translate3d( 0px, 0px, 0px );
+ }
+ .p-mask h4{
+     color: #fff;
+     font-size: 1.2em;
+     text-decoration: none;
+     line-height: 1.8em;
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+ .p-mask p{
+     margin: 0;
+     color: #f5f5f5;
+     line-height: 1.8em;
+ }
+ .p-mask span {
+         color: #7ac143;
+ }
+/* //Produtos */
 
 /*-- Team --*/
 
@@ -1515,7 +1588,7 @@ i.fa-envelope-o {
     p {
         font-size: 14px;
     }
-    .gallery-grid1 .p-mask,
+    .gallery_product .p-mask,
     .row .product .vm-product-media-container .p-mask {
         padding: 15px;
     }
